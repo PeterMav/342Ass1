@@ -8,9 +8,19 @@
 
 import Foundation
 
-class GameModel {
+class GameModel: NSObject {
+    
     struct TileData {
         var tileImage = [String]()
         var imageIdentifier: Int
     }
+    
+    var lastTileTapped: Int
+    var tileData = [TileData]()
+    
+    override init () {
+        lastTileTapped = 0;
+    }
+    
+    
 }

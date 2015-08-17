@@ -34,6 +34,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        tile1.image = UIImage(named: "question.png")
+        tile2.image = UIImage(named: "question.png")
+
+       // tile3.image = UIImage(named: "question.png")
+        /*
+        tile4.image = UIImage(named: "question.png")
+        tile5.image = UIImage(named: "question.png")
+        tile6.image = UIImage(named: "question.png")
+        tile7.image = UIImage(named: "question.png")
+        tile8.image = UIImage(named: "question.png")
+        tile9.image = UIImage(named: "question.png")
+        tile10.image = UIImage(named: "question.png")
+        tile11.image = UIImage(named: "question.png")
+        tile12.image = UIImage(named: "question.png")
+        tile13.image = UIImage(named: "question.png")
+        tile14.image = UIImage(named: "question.png")
+        tile15.image = UIImage(named: "question.png")
+        tile16.image = UIImage(named: "question.png")
+        tile17.image = UIImage(named: "question.png")
+        tile18.image = UIImage(named: "question.png")
+*/
     }
 
     override func didReceiveMemoryWarning() {
