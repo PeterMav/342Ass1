@@ -18,6 +18,7 @@
 		37D31AF41B819209009942D9 /* cathedral.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AF01B819209009942D9 /* cathedral.png */; };
 		37D31AF51B819209009942D9 /* lake.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AF11B819209009942D9 /* lake.png */; };
 		37D31AF61B819209009942D9 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AF21B819209009942D9 /* question.png */; };
+		D0A8B8371B81F654003C9525 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A8B8361B81F654003C9525 /* splash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		37D31AF01B819209009942D9 /* cathedral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cathedral.png; sourceTree = "<group>"; };
 		37D31AF11B819209009942D9 /* lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lake.png; sourceTree = "<group>"; };
 		37D31AF21B819209009942D9 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		D0A8B8361B81F654003C9525 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		37D31ACA1B818B8E009942D9 /* 342Ass1 */ = {
 			isa = PBXGroup;
 			children = (
+				D0A8B8361B81F654003C9525 /* splash.jpg */,
 				37D31AEF1B819209009942D9 /* baldhill.png */,
 				37D31AF01B819209009942D9 /* cathedral.png */,
 				37D31AF11B819209009942D9 /* lake.png */,
@@ -211,6 +214,7 @@
 				37D31AD81B818B8E009942D9 /* LaunchScreen.xib in Resources */,
 				37D31AF61B819209009942D9 /* question.png in Resources */,
 				37D31AF51B819209009942D9 /* lake.png in Resources */,
+				D0A8B8371B81F654003C9525 /* splash.jpg in Resources */,
 				37D31AF41B819209009942D9 /* cathedral.png in Resources */,
 				37D31AD51B818B8E009942D9 /* Images.xcassets in Resources */,
 				37D31AF31B819209009942D9 /* baldhill.png in Resources */,
@@ -429,6 +433,7 @@
 				37D31AE91B818B8E009942D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37D31AEA1B818B8E009942D9 /* Build configuration list for PBXNativeTarget "342Ass1Tests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				37D31AEC1B818B8E009942D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,7 @@
 import UIKit
 
 var gameModel = GameModel()
-
+var tileData = TileData()
 class ViewController: UIViewController {
 
     @IBOutlet weak var tile1: UIImageView!
@@ -30,32 +30,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var tile16: UIImageView!
     @IBOutlet weak var tile17: UIImageView!
     @IBOutlet weak var tile18: UIImageView!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
+        gameModel.gameReset()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        tile1.image = UIImage(named: "question.png")
-        tile2.image = UIImage(named: "question.png")
+       
+        tile1.image = UIImage(named: tileData.imageArray[3])
+        tile2.image = UIImage(named: tileData.imageArray[3])
+        tile3.image = UIImage(named: tileData.imageArray[3])
+        tile4.image = UIImage(named: tileData.imageArray[3])
+        tile5.image = UIImage(named: tileData.imageArray[3])
+        tile6.image = UIImage(named: tileData.imageArray[3])
+        tile7.image = UIImage(named: tileData.imageArray[3])
+        tile8.image = UIImage(named: tileData.imageArray[3])
+        tile9.image = UIImage(named: tileData.imageArray[3])
+        tile10.image = UIImage(named: tileData.imageArray[3])
+        tile11.image = UIImage(named: tileData.imageArray[3])
+        tile12.image = UIImage(named: tileData.imageArray[3])
+        tile13.image = UIImage(named: tileData.imageArray[3])
+        tile14.image = UIImage(named: tileData.imageArray[3])
+        tile15.image = UIImage(named: tileData.imageArray[3])
+        tile16.image = UIImage(named: tileData.imageArray[3])
+        tile17.image = UIImage(named: tileData.imageArray[3])
+        tile18.image = UIImage(named: tileData.imageArray[3])
 
-       // tile3.image = UIImage(named: "question.png")
-        /*
-        tile4.image = UIImage(named: "question.png")
-        tile5.image = UIImage(named: "question.png")
-        tile6.image = UIImage(named: "question.png")
-        tile7.image = UIImage(named: "question.png")
-        tile8.image = UIImage(named: "question.png")
-        tile9.image = UIImage(named: "question.png")
-        tile10.image = UIImage(named: "question.png")
-        tile11.image = UIImage(named: "question.png")
-        tile12.image = UIImage(named: "question.png")
-        tile13.image = UIImage(named: "question.png")
-        tile14.image = UIImage(named: "question.png")
-        tile15.image = UIImage(named: "question.png")
-        tile16.image = UIImage(named: "question.png")
-        tile17.image = UIImage(named: "question.png")
-        tile18.image = UIImage(named: "question.png")
-*/
     }
 
     override func didReceiveMemoryWarning() {
