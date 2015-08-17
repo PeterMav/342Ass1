@@ -8,6 +8,7 @@
 
 import UIKit
 
+var gameModel = GameModel()
 
 class ViewController: UIViewController {
 
