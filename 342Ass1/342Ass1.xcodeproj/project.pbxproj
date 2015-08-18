@@ -20,6 +20,7 @@
 		37D31AF51B819209009942D9 /* lake.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AF11B819209009942D9 /* lake.png */; };
 		37D31AF61B819209009942D9 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AF21B819209009942D9 /* question.png */; };
 		D0A8B8371B81F654003C9525 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0A8B8361B81F654003C9525 /* splash.jpg */; };
+		D0D030681B83B31B00BDA842 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D030671B83B31B00BDA842 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		37D31AF11B819209009942D9 /* lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lake.png; sourceTree = "<group>"; };
 		37D31AF21B819209009942D9 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
 		D0A8B8361B81F654003C9525 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		D0D030671B83B31B00BDA842 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				37D31AD61B818B8E009942D9 /* LaunchScreen.xib */,
 				37D31ACB1B818B8E009942D9 /* Supporting Files */,
 				37D31AED1B818CCA009942D9 /* GameModel.swift */,
+				D0D030671B83B31B00BDA842 /* TileView.swift */,
 			);
 			path = 342Ass1;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				37D31AD01B818B8E009942D9 /* ViewController.swift in Sources */,
 				37D31ACE1B818B8E009942D9 /* AppDelegate.swift in Sources */,
+				D0D030681B83B31B00BDA842 /* TileView.swift in Sources */,
 				37D31AEE1B818CCA009942D9 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
