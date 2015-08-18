@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         func scoreDidUpdate(model: GameModel, newScore: Int) {
             
         }
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
