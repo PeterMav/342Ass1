@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30BA77441B82FD08001E61E1 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 30BA77431B82FD08001E61E1 /* background.png */; };
 		37D31ACE1B818B8E009942D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D31ACD1B818B8E009942D9 /* AppDelegate.swift */; };
 		37D31AD01B818B8E009942D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D31ACF1B818B8E009942D9 /* ViewController.swift */; };
 		37D31AD31B818B8E009942D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D31AD11B818B8E009942D9 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30BA77431B82FD08001E61E1 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		37D31AC81B818B8E009942D9 /* 342Ass1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 342Ass1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D31ACC1B818B8E009942D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37D31ACD1B818B8E009942D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		37D31ACA1B818B8E009942D9 /* 342Ass1 */ = {
 			isa = PBXGroup;
 			children = (
+				30BA77431B82FD08001E61E1 /* background.png */,
 				D0A8B8361B81F654003C9525 /* splash.jpg */,
 				37D31AEF1B819209009942D9 /* baldhill.png */,
 				37D31AF01B819209009942D9 /* cathedral.png */,
@@ -217,6 +220,7 @@
 				D0A8B8371B81F654003C9525 /* splash.jpg in Resources */,
 				37D31AF41B819209009942D9 /* cathedral.png in Resources */,
 				37D31AD51B818B8E009942D9 /* Images.xcassets in Resources */,
+				30BA77441B82FD08001E61E1 /* background.png in Resources */,
 				37D31AF31B819209009942D9 /* baldhill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 struct TileData {
-    var tileImage: String
-    var imageIdentifier: Int
-    var imageArray = [String]()
+    var tileImage: String // Used to create the images for use later.
+    var imageIdentifier: Int // The identifier of the stored image.
+    var imageArray = [String]() // The array of images used in the game.
     init(){
         tileImage = " "
         imageIdentifier = 0;
@@ -28,14 +28,14 @@ struct TileData {
 }
 
 class GameModel: NSObject, Printable, DebugPrintable {
-    var tileData = [TileData]()
-    var images = TileData()
+    var tileData = [TileData]() // The array of Tiledata structs.
+    var images = TileData() // Instance of the array that holds the images used to create the tile images.
     var lastTileTapped: Int
+    var secondLastTapped: Int
     var firstTouched: Bool
     var totalTilesMatched: Int
     var score: Int
     var counter: Int
-
     var k: Int
     
     func gameReset(){
@@ -45,7 +45,7 @@ class GameModel: NSObject, Printable, DebugPrintable {
         firstTouched = false
         totalTilesMatched = 0
         score = 0
-        // Loads the images and identifiers
+        // Loads the images and identifiers.
         for var i = 0; i < 18; i++ {
             tileData += [TileData.self(image: images.imageArray[counter],identity: k)]
             counter++
@@ -65,15 +65,17 @@ class GameModel: NSObject, Printable, DebugPrintable {
     
     override init () {
         counter = 0;
-
         k = 0;
         lastTileTapped = 0;
+        secondLastTapped = 0;
         firstTouched = false
         totalTilesMatched = 0
         score = 0
         super.init()
         gameReset()
     }
+    // The description method prints before and after the shuffle
+    // showing the shuffle works
     var temp = " "
     override var description : String {
         for var i = 0; i < tileData.count; i++ {
@@ -85,9 +87,22 @@ class GameModel: NSObject, Printable, DebugPrintable {
         return temp
     }
     
-    func pushTileIndex() {
-        
+    func pushTileIndex(index: Int) {
+        secondLastTapped = lastTileTapped
+        lastTileTapped = index
     }
+    
+}
+
+protocol gameDidComplete {
+    
+}
+
+protocol didMatchTile {
+    
+}
+
+protocol scoreDidUpdate{
     
 }
 
@@ -102,3 +117,10 @@ extension Array
         }
     }
 }
+
+
+
+
+
+
+
