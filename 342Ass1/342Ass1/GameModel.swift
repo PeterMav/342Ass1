@@ -94,17 +94,7 @@ class GameModel: NSObject, Printable, DebugPrintable {
     
 }
 
-protocol gameDidComplete {
-    
-}
 
-protocol didMatchTile {
-    
-}
-
-protocol scoreDidUpdate{
-    
-}
 
 // The shuffle
 extension Array

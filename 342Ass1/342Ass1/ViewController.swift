@@ -35,7 +35,21 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-
+        func gameDidComplete(model: GameModel) {
+            
+        }
+        
+        func didMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int) {
+            
+        }
+        
+        func didFailToMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int) {
+            
+        }
+        
+        func scoreDidUpdate(model: GameModel, newScore: Int) {
+            
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
