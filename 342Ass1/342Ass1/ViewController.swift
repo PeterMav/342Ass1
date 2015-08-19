@@ -8,13 +8,9 @@
 
 import UIKit
 
-var gameModel = GameModel()
-var tileData = TileData()
+
 class ViewController: UIViewController {
 
-    
-    
-    
     
     override func viewDidLoad() {
         func gameDidComplete(model: GameModel) {
@@ -33,6 +29,7 @@ class ViewController: UIViewController {
             
         }
         
+        self.view.viewWithTag(1)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        

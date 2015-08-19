@@ -7,9 +7,28 @@
 //
 
 import Foundation
+import UIKit
 
-class TileView {
-    override init(coder aDecoder: NSCoder){
+class TileView: UIView {
+    let image: UIImage?
+    let imageView: UIImageView?
+    var tileIndex: Int
+    var innerView: UIView
+    
+     required init(coder aDecoder: NSCoder){
         
+        self.image = UIImage(named: "question.png")
+        self.imageView = UIImageView()
+        self.tileIndex = 0
+        innerView = UIView()
+        super.init(coder: aDecoder)
+        
+        innerView.backgroundColor = UIColor.purpleColor()
+        self.backgroundColor = UIColor.purpleColor()
+        self.addSubview(innerView)
+        
+        image?.superclass
     }
+    
+    
 }

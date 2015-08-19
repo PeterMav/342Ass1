@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKit
+
 
 struct TileData {
     var tileImage: String // Used to create the images for use later.
