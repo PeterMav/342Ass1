@@ -55,6 +55,7 @@ class GameModel: NSObject, Printable, DebugPrintable {
                 k = 0
             }
         }
+        tileData.shuffle()
     }
     
     override init () {
@@ -91,6 +92,9 @@ class GameModel: NSObject, Printable, DebugPrintable {
     }
     func getIdentifier(index: Int)->Int{
         return tileData[index].imageIdentifier
+    }
+    func getTileIndex(index: Int)-> Int{
+        return 1
     }
     
 }

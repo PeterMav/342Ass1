@@ -36,7 +36,7 @@ class TileView: UIView {
         
         //self.addSubview(imageView!)
         self.addSubview(imageView!)
-        println(gameModel.getImage(1))
+       
         
         for var i = 0; i < 18; i++ {
             imageName = gameModel.getImage(i)
@@ -47,26 +47,30 @@ class TileView: UIView {
     }
     
     // Change the displayed question mark image to the stored image.
-    func revealImage() {
-        
+    func revealImage(index: Int)-> String {
+        return gameModel.getImage(index)
     }
     
     // Change the displayed stored image to the question mark image.
-    func showQuestion() {
-        
+    func showQuestion(index: Int)-> String {
+        return images.imageArray[3]
     }
     
     // Tiles hidden when successfully matched.
-    func hideTiles() {
-        
+    func hideTiles(index1: Int, index2: Int){
+        self.viewWithTag(index1)?.hidden
+        self.viewWithTag(index2)?.hidden
     }
     
+    func getTileIndex(TileView)->Int{
+        return tileIndex
+    }
    
 }
 
 
 protocol TileViewDelegate{
-    func didSelectTile(TileView: TileView)
+    func didSelectTile(tileView: TileView)
 }
 
 
