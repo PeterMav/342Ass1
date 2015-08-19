@@ -15,12 +15,10 @@ class TileView: UIView {
     var tileIndex: Int
     var innerView: UIView
     var imageName: String?
-    
-    
-    
-    
+    //let tileData = [TileData]()
+    let images = TileData()
      required init(coder aDecoder: NSCoder){
-        self.imageName = "question.png"
+        self.imageName = images.imageArray[3] // Sets all tiles to question.png
         self.image = UIImage(named: imageName!)
         self.imageView = UIImageView(image: image!)
         self.tileIndex = 0
@@ -35,9 +33,44 @@ class TileView: UIView {
         
         // Sets the constraints to the images size and loads images to the tiles.
         imageView?.frame = CGRect(x: 0, y: 0, width: 90, height: 80)
+        
+        //self.addSubview(imageView!)
         self.addSubview(imageView!)
+        println(gameModel.getImage(1))
+        
+        for var i = 0; i < 18; i++ {
+            imageName = gameModel.getImage(i)
+            self.addSubview(imageView!)
+            
+        }
         
     }
     
+    // Change the displayed question mark image to the stored image.
+    func revealImage() {
+        
+    }
     
+    // Change the displayed stored image to the question mark image.
+    func showQuestion() {
+        
+    }
+    
+    // Tiles hidden when successfully matched.
+    func hideTiles() {
+        
+    }
+    
+   
 }
+
+
+protocol TileViewDelegate{
+    func didSelectTile(TileView: TileView)
+}
+
+
+
+
+
+

@@ -8,28 +8,16 @@
 
 import UIKit
 
-
+var gameModel = GameModel()
+var tileData = TileData()
 class ViewController: UIViewController {
 
     
+    
     override func viewDidLoad() {
-        func gameDidComplete(model: GameModel) {
-            
-        }
         
-        func didMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int) {
-            
-        }
         
-        func didFailToMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int) {
-            
-        }
         
-        func scoreDidUpdate(model: GameModel, newScore: Int) {
-            
-        }
-        
-        self.view.viewWithTag(1)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
@@ -37,6 +25,10 @@ class ViewController: UIViewController {
 
     }
 
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        // Something goes here.
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

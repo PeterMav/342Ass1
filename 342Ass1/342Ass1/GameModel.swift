@@ -55,12 +55,6 @@ class GameModel: NSObject, Printable, DebugPrintable {
                 k = 0
             }
         }
-        println("Count: \(tileData.count)")
-        println("Before the shuffle")
-        println(description)
-        tileData.shuffle() // The shuffle
-        println("After Shuffle")
-        println(description)
     }
     
     override init () {
@@ -87,14 +81,26 @@ class GameModel: NSObject, Printable, DebugPrintable {
         return temp
     }
     
+    // The tile touched.
     func pushTileIndex(index: Int) {
         secondLastTapped = lastTileTapped
         lastTileTapped = index
     }
+    func getImage(index: Int)-> String {
+        return tileData[index].tileImage
+    }
+    func getIdentifier(index: Int)->Int{
+        return tileData[index].imageIdentifier
+    }
     
 }
 
-
+protocol GameModelDelegate{
+    func gameDidComplete(model: GameModel)
+    func didMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int)
+    func didFailToMatchTile(model: GameModel, tileIndex: Int, previousTileIndex: Int)
+    func scoreDidUpdate(model: GameModel, newScore: Int)
+}
 
 // The shuffle
 extension Array
