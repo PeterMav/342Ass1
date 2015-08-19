@@ -14,21 +14,21 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oD2-WU-AVm">
                                 <rect key="frame" x="0.0" y="0.0" width="1080" height="1920"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCT-SE-FGy">
-                                <rect key="frame" x="16" y="20" width="343" height="96"/>
+                                <rect key="frame" x="16" y="20" width="568" height="29"/>
                                 <color key="backgroundColor" red="0.081471578414676393" green="0.16599589646464652" blue="0.15595861066488301" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
                                 <color key="textColor" red="0.67649549137162446" green="0.98678188131313127" blue="0.27935783768363498" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-L3-1Tl" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="124" width="90" height="80"/>
+                                <rect key="frame" x="142" y="57" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="f9S-DY-n1Y"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </view>
                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJJ-n2-Bql" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="212" width="90" height="80"/>
+                                <rect key="frame" x="142" y="145" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="0jj-lw-DxY"/>
@@ -44,7 +44,7 @@
                                 </constraints>
                             </view>
                             <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A29-1o-Lbw" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="300" width="90" height="80"/>
+                                <rect key="frame" x="142" y="233" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="vt8-3W-VYZ"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </view>
                             <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wna-TF-DpD" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="388" width="90" height="80"/>
+                                <rect key="frame" x="258" y="321" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="5Ah-HM-J7t"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cec-X9-B6M" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="388" width="90" height="80"/>
+                                <rect key="frame" x="142" y="321" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Q6W-xG-LvQ"/>
@@ -68,7 +68,7 @@
                                 </constraints>
                             </view>
                             <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-Dz-Mdn" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="476" width="90" height="80"/>
+                                <rect key="frame" x="142" y="409" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="aP3-6B-D8V"/>
@@ -76,7 +76,7 @@
                                 </constraints>
                             </view>
                             <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-Mi-y8T" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="142" y="567" width="90" height="80"/>
+                                <rect key="frame" x="142" y="500" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="AYg-cV-FvA"/>
@@ -84,7 +84,7 @@
                                 </constraints>
                             </view>
                             <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTM-T8-CJU" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="567" width="90" height="80"/>
+                                <rect key="frame" x="258" y="500" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="2rs-eD-oop"/>
@@ -92,7 +92,7 @@
                                 </constraints>
                             </view>
                             <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nye-Wm-3bf" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="30" y="567" width="90" height="80"/>
+                                <rect key="frame" x="30" y="500" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="QPg-Mm-EJC"/>
@@ -100,7 +100,7 @@
                                 </constraints>
                             </view>
                             <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MF-jV-y0p" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="476" width="90" height="80"/>
+                                <rect key="frame" x="258" y="409" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="B4k-wi-LVd"/>
@@ -108,7 +108,7 @@
                                 </constraints>
                             </view>
                             <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-8p-fnb" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="30" y="476" width="90" height="80"/>
+                                <rect key="frame" x="30" y="409" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="ALI-8E-R5a"/>
@@ -116,7 +116,7 @@
                                 </constraints>
                             </view>
                             <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G91-aK-7It" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="300" width="90" height="80"/>
+                                <rect key="frame" x="258" y="233" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="S1M-2a-fhd"/>
@@ -124,7 +124,7 @@
                                 </constraints>
                             </view>
                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmZ-PN-7G3" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="212" width="90" height="80"/>
+                                <rect key="frame" x="258" y="145" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Y6L-UN-knq"/>
@@ -132,7 +132,7 @@
                                 </constraints>
                             </view>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqy-u8-MkK" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="30" y="212" width="90" height="80"/>
+                                <rect key="frame" x="30" y="145" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="ISZ-Qh-mT2"/>
@@ -140,7 +140,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgD-M2-qzD" customClass="TileView" customModule="_42Ass1">
-                                <rect key="frame" x="30" y="124" width="90" height="80"/>
+                                <rect key="frame" x="30" y="57" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="UuB-mo-Ihx"/>
@@ -148,7 +148,7 @@
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yog-0Z-397" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="258" y="124" width="90" height="80"/>
+                                <rect key="frame" x="258" y="57" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9gc-dU-STG"/>
@@ -156,7 +156,7 @@
                                 </constraints>
                             </view>
                             <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svs-gU-2Pq" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="30" y="300" width="90" height="80"/>
+                                <rect key="frame" x="30" y="233" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="NcA-Zj-ZAV"/>
@@ -164,7 +164,7 @@
                                 </constraints>
                             </view>
                             <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-qB-Iwu" customClass="TileView" customModule="_42Ass1" customModuleProvider="target">
-                                <rect key="frame" x="30" y="388" width="90" height="80"/>
+                                <rect key="frame" x="30" y="321" width="90" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="7qn-ej-n7d"/>
@@ -252,7 +252,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
