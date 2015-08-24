@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     // Touches began.
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         // Something goes here.
-        var x: String?
-       tileView.getTileIndex(tileData)
+
+       //tileView.getTileIndex()
     }
     
     override func didReceiveMemoryWarning() {
