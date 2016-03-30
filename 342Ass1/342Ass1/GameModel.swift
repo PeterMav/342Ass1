@@ -2,7 +2,7 @@
 //  GameModel.swift
 //  342Ass1
 //
-//  Created by Peter Mavridis on 17/08/2015.
+//  Created by Peter Mavridis on 31/03/2016.
 //  Copyright (c) 2015 Peter Mavridis. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ struct TileData {
     }
 }
 
-class GameModel: NSObject, Printable, DebugPrintable {
+class GameModel: NSObject, CustomDebugStringConvertible {
     var tileData = [TileData]() // The array of Tiledata structs.
     var images = TileData() // Instance of the array that holds the images used to create the tile images.
     var lastTileTapped: Int
@@ -55,12 +55,12 @@ class GameModel: NSObject, Printable, DebugPrintable {
                 k = 0
             }
         }
-        println("Count: \(tileData.count)")
-        println("Before the shuffle")
-        println(description)
+        print("Count: \(tileData.count)")
+        print("Before the shuffle")
+        print(description)
         tileData.shuffle() // The shuffle
-        println("After Shuffle")
-        println(description)
+        print("After Shuffle")
+        print(description)
     }
     
     override init () {
@@ -82,7 +82,6 @@ class GameModel: NSObject, Printable, DebugPrintable {
             print(tileData[i].tileImage)
             print(" ")
             print(tileData[i].imageIdentifier)
-            println()
         }
         return temp
     }
@@ -95,7 +94,6 @@ class GameModel: NSObject, Printable, DebugPrintable {
 }
 
 
-
 // The shuffle
 extension Array
 {
@@ -103,7 +101,7 @@ extension Array
     {
         for _ in 0..<18
         {
-            sort { (_,_) in arc4random() < arc4random() }
+            sortInPlace { (_,_) in arc4random() < arc4random() }
         }
     }
 }

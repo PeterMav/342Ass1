@@ -9,7 +9,7 @@
 import Foundation
 
 class TileView {
-    override init(coder aDecoder: NSCoder){
+    init(coder aDecoder: NSCoder){
         
     }
 }
