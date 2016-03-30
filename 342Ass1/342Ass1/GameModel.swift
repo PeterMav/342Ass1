@@ -27,7 +27,7 @@ struct TileData {
     }
 }
 
-class GameModel: NSObject, Printable, DebugPrintable {
+class GameModel: NSObject, CustomDebugStringConvertible {
     var tileData = [TileData]() // The array of Tiledata structs.
     var images = TileData() // Instance of the array that holds the images used to create the tile images.
     var lastTileTapped: Int
@@ -55,12 +55,12 @@ class GameModel: NSObject, Printable, DebugPrintable {
                 k = 0
             }
         }
-        println("Count: \(tileData.count)")
-        println("Before the shuffle")
-        println(description)
+        print("Count: \(tileData.count)")
+        print("Before the shuffle")
+        print(description)
         tileData.shuffle() // The shuffle
-        println("After Shuffle")
-        println(description)
+        print("After Shuffle")
+        print(description)
     }
     
     override init () {
@@ -79,10 +79,10 @@ class GameModel: NSObject, Printable, DebugPrintable {
     var temp = " "
     override var description : String {
         for var i = 0; i < tileData.count; i++ {
-            print(tileData[i].tileImage)
-            print(" ")
-            print(tileData[i].imageIdentifier)
-            println()
+            print(tileData[i].tileImage, terminator: "")
+            print(" ", terminator: "")
+            print(tileData[i].imageIdentifier, terminator: "")
+            print("")
         }
         return temp
     }
@@ -103,7 +103,7 @@ extension Array
     {
         for _ in 0..<18
         {
-            sort { (_,_) in arc4random() < arc4random() }
+            sortInPlace { (_,_) in arc4random() < arc4random() }
         }
     }
 }
