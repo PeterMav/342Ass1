@@ -9,7 +9,8 @@
 import Foundation
 
 class TileView {
+    var tool: Int
     init(coder aDecoder: NSCoder){
-        
+        tool = 0
     }
 }
