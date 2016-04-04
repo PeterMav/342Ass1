@@ -2,7 +2,7 @@
 //  GameModel.swift
 //  342Ass1
 //
-//  Created by Peter Mavridis on 17/08/2015.
+//  Created by Peter Mavridis on 4/04/2016.
 //  Copyright (c) 2015 Peter Mavridis. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ struct TileData {
     }
 }
 
-class GameModel: NSObject, Printable, DebugPrintable {
+class GameModel: NSObject {
     var tileData = [TileData]() // The array of Tiledata structs.
     var images = TileData() // Instance of the array that holds the images used to create the tile images.
     var lastTileTapped: Int
@@ -46,10 +46,10 @@ class GameModel: NSObject, Printable, DebugPrintable {
         totalTilesMatched = 0
         score = 0
         // Loads the images and identifiers.
-        for var i = 0; i < 18; i++ {
+        for _ in 0 ..< 18 {
             tileData += [TileData.self(image: images.imageArray[counter],identity: k)]
-            counter++
-            k++
+            counter += 1
+            k += 1
             if counter == 3{
                 counter = 0
                 k = 0
@@ -73,11 +73,11 @@ class GameModel: NSObject, Printable, DebugPrintable {
     // showing the shuffle works
     var temp = " "
     override var description : String {
-        for var i = 0; i < tileData.count; i++ {
-            print(tileData[i].tileImage)
-            print(" ")
-            print(tileData[i].imageIdentifier)
-            println()
+        for i in 0 ..< tileData.count {
+            print(tileData[i].tileImage, terminator: "")
+            print(" ", terminator: "")
+            print(tileData[i].imageIdentifier, terminator: "")
+            print("")
         }
         return temp
     }
@@ -113,7 +113,7 @@ extension Array
     {
         for _ in 0..<18
         {
-            sort { (_,_) in arc4random() < arc4random() }
+            sortInPlace { (_,_) in arc4random() < arc4random() }
         }
     }
 }

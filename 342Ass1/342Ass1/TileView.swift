@@ -2,7 +2,7 @@
 //  TileView.swift
 //  342Ass1
 //
-//  Created by Peter Mavridis on 19/08/2015.
+//  Created by Peter Mavridis on 4/04/2016.
 //  Copyright (c) 2015 Peter Mavridis. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class TileView: UIView {
     var imageName: String?
     //let tileData = [TileData]()
     let images = TileData()
-     required init(coder aDecoder: NSCoder){
+     required init?(coder aDecoder: NSCoder){
         self.imageName = images.imageArray[3] // Sets all tiles to question.png
         self.image = UIImage(named: imageName!)
         self.imageView = UIImageView(image: image!)
@@ -38,7 +38,7 @@ class TileView: UIView {
         self.addSubview(imageView!)
        
         
-        for var i = 0; i < 18; i++ {
+        for i in 0 ..< 18 {
             imageName = gameModel.getImage(i)
             self.addSubview(imageView!)
             
@@ -62,7 +62,7 @@ class TileView: UIView {
         self.viewWithTag(index2)?.hidden
     }
     
-    func getTileIndex(TileView)->Int{
+    func getTileIndex(_: TileView)->Int{
         return tileIndex
     }
    
