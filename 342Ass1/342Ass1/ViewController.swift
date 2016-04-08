@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     // Touches began.
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // Something goes here.
-        var tileIndex = Int()
-        tileView.getTileIndex(tileIndex) as? TileView
+        
+        
        //tileView.getTileIndex()
     }
     
